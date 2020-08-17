@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JpaBasic" />
+        <module name="Jpa4PrimaryKeyStratage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Jpa4PrimaryKeyStratage" target="1.8" />
       <module name="JpaBasic" target="1.8" />
     </bytecodeTargetLevel>
   </component>

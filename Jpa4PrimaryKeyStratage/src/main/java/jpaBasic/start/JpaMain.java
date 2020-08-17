@@ -8,7 +8,7 @@ import java.util.List;
 
 public class                                                                                                                                                            JpaMain {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook4Primary");
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
 
@@ -25,22 +25,9 @@ public class                                                                    
     }
 
     private static void logic(EntityManager em) {
-        String id = "id1";
-        Member member = new Member();
-        member.setId(id);
-        member.setUsername("jun");
-        member.setAge(10);
+      Board board = new Board();
+      em.persist(board);
+        System.out.println("30    board.id = " + board.getId());
 
-        em.persist(member);
-
-        member.setAge(20);
-
-        Member findMember = em.find(Member.class, id);
-        System.out.println("findMember=" + findMember.getUsername() + ", age=" + findMember.getAge());
-        List<Member> members = em.createQuery("select m from Member m", Member.class).getResultList();
-        System.out.println("members.size=" + members.size());
-
-        // delete
-        em.remove(member);
     }
 }
