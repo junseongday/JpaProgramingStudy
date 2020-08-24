@@ -36,7 +36,7 @@ public class Main {
     }
 
     private static void logic(EntityManager em) {
-        
+
     }
 
 }

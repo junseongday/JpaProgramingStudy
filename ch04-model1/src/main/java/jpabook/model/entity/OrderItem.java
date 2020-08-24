@@ -63,3 +63,7 @@ public class OrderItem {
     }
 
 }
+
+enum OrderStatus {
+    ORDER, CANCEL
+}
