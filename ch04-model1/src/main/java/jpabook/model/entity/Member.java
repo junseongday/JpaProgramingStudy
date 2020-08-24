@@ -1,9 +1,8 @@
 package jpabook.model.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Member {
@@ -15,6 +14,21 @@ public class Member {
     private String city; // 도시
     private String street;
     private String zipcode;
+
+    @OneToMany(mappedBy = "member")
+    private List<Order> oders = new ArrayList<Order>();
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<Order> getOders() {
+        return oders;
+    }
+
+    public void setOders(List<Order> oders) {
+        this.oders = oders;
+    }
 
     public Long getId() {
         return id;

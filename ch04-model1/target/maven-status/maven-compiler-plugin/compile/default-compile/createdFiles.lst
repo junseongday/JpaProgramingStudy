@@ -1,0 +1,6 @@
+jpabook/model/entity/Member.class
+Main.class
+jpabook/model/entity/Item.class
+jpabook/model/entity/OrderItem.class
+jpabook/model/entity/OrderStatus.class
+jpabook/model/entity/Order.class
