@@ -3,10 +3,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/JpaBasic/pom.xml" />
-        <option value="$PROJECT_DIR$/Jpa4PrimaryKeyStratage/pom.xml" />
         <option value="$PROJECT_DIR$/ch04-model1/pom.xml" />
-        <option value="$PROJECT_DIR$/ch05-modul2/pom.xml" />
       </list>
     </option>
   </component>

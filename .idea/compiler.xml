@@ -6,9 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JpaBasic" />
-        <module name="Jpa4PrimaryKeyStratage" />
-        <module name="ch05-modul2" />
         <module name="ch04-model1" />
       </profile>
     </annotationProcessing>
