@@ -1,4 +1,6 @@
+import jpabook.model.entity.Delivery;
 import jpabook.model.entity.Order;
+import jpabook.model.entity.OrderItem;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -36,6 +38,16 @@ public class Main {
     }
 
     private static void logic(EntityManager em) {
+        Delivery delivery = new Delivery();
+        OrderItem orderItem1 = new OrderItem();
+        OrderItem orderItem2 = new OrderItem();
+
+        Order order = new Order();
+        order.setDelivery(delivery);
+        order.addOrderItem(orderItem1);
+        order.addOrderItem(orderItem2);
+
+        em.persist(order);
 
     }
 
